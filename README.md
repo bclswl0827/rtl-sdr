@@ -25,7 +25,7 @@ root@pc:/home# git clone https://github.com/bclswl0827/rtl-sdr.git
 root@pc:/home# cd rtl-sdr
 root@pc:/home/rtl-sdr# mkdir build
 root@pc:/home/rtl-sdr/build# cd build
-root@pc:/home/rtl-sdr/build# cmake ..
+root@pc:/home/rtl-sdr/build# cmake .. -DDETACH_KERNEL_DRIVER=ON -DINSTALL_UDEV_RULES=ON
 root@pc:/home/rtl-sdr/build# make
 root@pc:/home/rtl-sdr/build# make install
 root@pc:/home/rtl-sdr/build# ldconfig
